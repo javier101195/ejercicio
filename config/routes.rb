@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   root to: "home#index"
   
   devise_scope :user do
-    #get '/users/sign_in' => 'devise/sessions#new' 
     #post '/users' => 'devise/registrations#create'
     #get '/users/sign_up' => 'devise/registrations#new'
     get '/users/sign_out', to: 'devise/sessions#destroy'     
